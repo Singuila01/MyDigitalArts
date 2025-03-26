@@ -12,7 +12,7 @@ Route::group(['prefix'=>'cards'], function(){
     Route::get('/index', [CardController::class, 'index'])->name('cards.index');
 });
 
-// Route::get('/categories', [CardCategoryController::class, "index"]);
+Route::get('/categories', [CardCategoryController::class, "index"]);
 
 Auth::routes();
 
