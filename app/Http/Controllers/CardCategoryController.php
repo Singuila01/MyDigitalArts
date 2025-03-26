@@ -5,17 +5,18 @@ namespace App\Http\Controllers;
 use App\Models\CardCategory;
 use App\Http\Requests\StoreCardCategoryRequest;
 use App\Http\Requests\UpdateCardCategoryRequest;
+use Illuminate\Contracts\View\View;
 
 class CardCategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\View
      */
-    public function index()
-    {
-        //
+    public function index() : View {
+        $categories = CardCategory::all();
+        return view( "categories", ["categories" => $categories]);
     }
 
     /**

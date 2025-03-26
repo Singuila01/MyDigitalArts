@@ -16,6 +16,8 @@ class CreateCardCategoriesTable extends Migration
         Schema::create('card_categories', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('description');
+            $table->boolean('enable');
             $table->timestamps();
         });
     }
