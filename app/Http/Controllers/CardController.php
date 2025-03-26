@@ -6,6 +6,8 @@ use App\Models\Card;
 use App\Http\Requests\StoreCardRequest;
 use App\Http\Requests\UpdateCardRequest;
 
+
+
 class CardController extends Controller
 {
     /**
@@ -15,7 +17,8 @@ class CardController extends Controller
      */
     public function index()
     {
-        //
+        $cards = Card::all();
+        return view('cards.index',  compact('cards'));
     }
 
     /**
