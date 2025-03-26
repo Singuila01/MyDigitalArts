@@ -10,3 +10,7 @@ Route::get('/', function () {
 
 Route::get('/cards', [CardController::class, "index"]);
 Route::get('/categories', [CardCategoryController::class, "index"]);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

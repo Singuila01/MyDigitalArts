@@ -17,7 +17,7 @@ class CardCategorySeeder extends Seeder
         CardCategory::create(["name" => "Street Art", "description" => "Fresque, art urbain", "enable" => "1"]);
         CardCategory::create(["name" => "Calligraphie", "description" => "Calligraphie", "enable" => "1"]);
         CardCategory::create(["name" => "Affiches", "description" => "Affiches", "enable" => "1"]);
-        CardCategory::create(["name" => "Typrographies", "description" => "Affiches", "enable" => "1"]);
+        CardCategory::create(["name" => "Typographies", "description" => "Affiches", "enable" => "1"]);
         CardCategory::create(["name" => "Logos", "description" => "Logos", "enable" => "1"]);
         CardCategory::create(["name" => "Animations", "description" => "Gifs, visuels animes", "enable" => "1"]);
         CardCategory::create(["name" => "Noir et blancs", "description" => "Noir et blanc", "enable" => "1"]);
