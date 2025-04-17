@@ -1,19 +1,19 @@
 @include('layouts.header')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
+<div class="container mx-auto px-4">
+    <div class="flex justify-center">
+        <div class="w-full md:w-2/3">
+            <div class="bg-white shadow rounded-lg">
+                <div class="bg-gray-100 p-4 rounded-t-lg">
+                    {{ __('Dashboard') }}
+                </div>
+                <div class="p-4">
                     @if (session('status'))
-                        <div class="alert alert-success" role="alert">
+                        <div class="bg-green-100 text-green-700 p-4 rounded mb-4" role="alert">
                             {{ session('status') }}
                         </div>
                     @endif
-
                     {{ __('You are logged in!') }}
                 </div>
             </div>
