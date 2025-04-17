@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CardCategoryController;
 use App\Http\Controllers\CardController;
+use App\Http\Middleware\LoggerMiddleWare;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -14,7 +15,7 @@ Route::group(['prefix'=>'cards'], function(){
 
 // Route::get('/categories', [CardCategoryController::class, "index"]);
 
-Auth::routes();
+Route::resource('cards', CardController::class)->middleware(LoggerMiddleWare::class);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

@@ -18,11 +18,10 @@ class CreateCardsTable extends Migration
             $table->string('title');
             $table->string('description');
             $table->timestamps();
-            $table->string('video');
-            $table->string('music');
-            $table->string('image');
+            $table->string('video')->nullable();
+            $table->string('music')->nullable();
+            $table->string('image')->nullable();
             $table->boolean('deleted')->default(false);
-            $table->date('creation_date');
             $table->foreignId('user_id');
 
         });
