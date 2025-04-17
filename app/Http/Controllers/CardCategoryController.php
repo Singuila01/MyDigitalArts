@@ -14,9 +14,11 @@ class CardCategoryController extends Controller
      *
      * @return \Illuminate\Contracts\View\View
      */
-    public function index() : View {
+
+    public function index() : View
+    {
         $categories = CardCategory::all();
-        return view( "categories", ["categories" => $categories]);
+        return view('categories.index', compact('categories'));
     }
 
     /**
