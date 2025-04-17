@@ -11,7 +11,7 @@
     <!-- Navbar -->
     <nav class="bg-gray-800 text-white p-4 shadow-md">
         <div class="container mx-auto flex justify-between items-center">
-            <a href="/" class="text-2xl font-bold">Vignettes</a>
+            <a href="/home" class="text-2xl font-bold">Vignettes</a>
             <div class="space-x-4">
                 <a href="/cards" class="hover:text-gray-300 transition-colors duration-200">Cartes</a>
                 <a href="/about" class="hover:text-gray-300 transition-colors duration-200">À propos</a>
@@ -24,3 +24,9 @@
             </div>
         </div>
     </nav>
+
+    <main class="py-4">
+        @yield('content')
+    </main>
+</body>
+</html>
