@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "title": "Sunset Serenity",
+        "description": "A calming scene of a sunset over the ocean.",
+        "created_at": "2025-03-26T16:00:02.000000Z",
+        "updated_at": "2025-03-26T16:00:02.000000Z",
+        "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+        "video": "https://www.youtube.com/watch?v=ysz5S6PUM-U",
+        "music": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+        "deleted": 0,
+        "user_id": 1
+    },
+    {
+        "id": 2,
+        "title": "Mountain Adventure",
+        "description": "Exploring the rugged peaks of the Alps.",
+        "created_at": "2025-03-26T16:00:02.000000Z",
+        "updated_at": "2025-03-26T16:00:02.000000Z",
+        "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba",
+        "video": "https://vimeo.com/123456789",
+        "music": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+        "deleted": 0,
+        "user_id": 1
+    },
+    {
+        "id": 3,
+        "title": "City Lights",
+        "description": "The vibrant glow of a city at night.",
+        "created_at": "2025-03-26T16:00:02.000000Z",
+        "updated_at": "2025-03-26T16:00:02.000000Z",
+        "image": "https://images.unsplash.com/photo-1519003722824-194d4455a60c",
+        "video": null,
+        "music": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
+        "deleted": 0,
+        "user_id": 1
+    },
+    {
+        "id": 4,
+        "title": "Forest Whisper",
+        "description": "The tranquil sounds of a dense forest.",
+        "created_at": "2025-03-26T16:00:02.000000Z",
+        "updated_at": "2025-03-26T16:00:02.000000Z",
+        "image": "https://images.unsplash.com/photo-1448375240586-882707db888b",
+        "video": "https://www.youtube.com/watch?v=3mJ5Z56P-0w",
+        "music": null,
+        "deleted": 0,
+        "user_id": 1
+    },
+    {
+        "id": 5,
+        "title": "Desert Mirage",
+        "description": "The endless sands of the Sahara.",
+        "created_at": "2025-03-26T16:00:02.000000Z",
+        "updated_at": "2025-03-26T16:00:02.000000Z",
+        "image": "https://images.locationscout.net/2023/03/lut-desert-iran-0w1k.webp?h=1400&q=80",
+        "video": null,
+        "music": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
+        "deleted": 0,
+        "user_id": 1
+    },
+    {
+        "id": 6,
+        "title": "Ocean Waves",
+        "description": "The rhythmic crash of waves on the shore.",
+        "created_at": "2025-03-26T16:00:02.000000Z",
+        "updated_at": "2025-03-26T16:00:02.000000Z",
+        "image": "https://images.unsplash.com/photo-1509233725247-49e657c54213",
+        "video": "https://vimeo.com/987654321",
+        "music": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3",
+        "deleted": 0,
+        "user_id": 1
+    },
+    {
+        "id": 7,
+        "title": "Starry Night",
+        "description": "A sky full of twinkling stars.",
+        "created_at": "2025-03-26T16:00:02.000000Z",
+        "updated_at": "2025-03-26T16:00:02.000000Z",
+        "image": "https://images.unsplash.com/photo-1533206482744-5a08b6a3574b",
+        "video": null,
+        "music": null,
+        "deleted": 0,
+        "user_id": 1
+    },
+    {
+        "id": 8,
+        "title": "Urban Jungle",
+        "description": "The hustle and bustle of city life.",
+        "created_at": "2025-03-26T16:00:02.000000Z",
+        "updated_at": "2025-03-26T16:00:02.000000Z",
+        "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+        "video": "https://www.youtube.com/watch?v=Zg4M5aJ6N8A",
+        "music": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3",
+        "deleted": 0,
+        "user_id": 1
+    },
+    {
+        "id": 9,
+        "title": "Autumn Breeze",
+        "description": "The crisp air of an autumn day.",
+        "created_at": "2025-03-26T16:00:02.000000Z",
+        "updated_at": "2025-03-26T16:00:02.000000Z",
+        "image": "https://images.unsplash.com/photo-1470217956675-8e53082a72a1",
+        "video": null,
+        "music": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3",
+        "deleted": 0,
+        "user_id": 1
+    },
+    {
+        "id": 10,
+        "title": "Snowy Peaks",
+        "description": "The serene beauty of snow-covered mountains.",
+        "created_at": "2025-03-26T16:00:02.000000Z",
+        "updated_at": "2025-03-26T16:00:02.000000Z",
+        "image": "https://images.unsplash.com/photo-1544198365-4566e77b8f44",
+        "video": "https://vimeo.com/456789123",
+        "music": null,
+        "deleted": 0,
+        "user_id": 1
+    }
+]

@@ -5,8 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Card;
 use App\Http\Requests\StoreCardRequest;
 use App\Http\Requests\UpdateCardRequest;
-
-
+use Illuminate\Support\Facades\File;
 
 class CardController extends Controller
 {
@@ -17,8 +16,10 @@ class CardController extends Controller
      */
     public function index()
     {
-        $cards = Card::all();
-        return view('cards.index',  compact('cards'));
+        // $cards = Card::all();
+        $json = File::get(public_path('cards.json'));
+        $cards = collect(json_decode($json));
+        return view('cards.index', compact('cards'));
     }
 
     /**
@@ -46,11 +47,11 @@ class CardController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Models\Card  $card
-     * @return \Illuminate\Http\Response
      */
     public function show(Card $card)
     {
-        //
+        return view('cards.show', compact('card'));
+
     }
 
     /**
