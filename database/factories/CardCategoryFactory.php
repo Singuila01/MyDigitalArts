@@ -14,7 +14,9 @@ class CardCategoryFactory extends Factory
     public function definition()
     {
         return [
-            "name" => $this->faker->sentence()
+            "name" => $this->faker->sentence(),
+            "description" => $this->faker->text(100),
+            "enable" => $this->faker->boolean(),
         ];
     }
 }
