@@ -1,4 +1,4 @@
-@extends('layouts.header')
+@extends('layouts.headeradmin')
 
 @section('content')
     <div class="zone-btn">
@@ -57,7 +57,7 @@
     @endif
 
     <style>
-       .zone-btn{
+        .zone-btn{
             display: flex;
             flex-flow: row nowrap;
             justify-content: center;
@@ -96,8 +96,10 @@
             position: relative;
         }
         table{
+            padding: 10px;
             margin: 0 auto;
-            max-width: 800px;
+            max-width: 1140px;
+            width: 100%;
         }
         table .action{
             display: flex;
@@ -127,30 +129,33 @@
         table tbody tr:nth-child(odd){
             background: #e9ecef;
         }
-        ul li a.edit{
+        a.edit{
             /* inset: 0 auto auto 0; */
             display: block;
             max-width: max-content;
             width: 100%;
             background: #007bff;
             color: #fff;
-            margin: 20px 0 0;
             padding: 10px;
             border-radius: 10px;
+            transition: all 0.3s ease;
         }
-        ul li form button.delete {
+        a.edit:hover{
+            background: #000fff;
+        }
+        form button.delete {
             display: block;
             max-width: max-content;
             width: 100%;
             background: #dc3545;
             color: #fff;
-            margin: 10px 0 0;
             padding: 10px;
             border: none;
             border-radius: 10px;
             cursor: pointer;
+            transition: all 0.3s ease;
         }
-        ul li form button.delete:hover {
+        form button.delete:hover {
             background: #c82333;
         }
     </style>

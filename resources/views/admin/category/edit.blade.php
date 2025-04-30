@@ -1,4 +1,4 @@
-@extends("layouts.header")
+@extends("layouts.headeradmin")
 
 @section("content")
     <a href="/admin/category" class="lien-btn">Retour en arrière</a>

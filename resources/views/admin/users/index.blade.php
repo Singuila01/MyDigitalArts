@@ -1,4 +1,4 @@
-@extends('layouts.header')
+@extends('layouts.headeradmin')
 
 @section('content')
     <div class="zone-btn">
@@ -12,7 +12,7 @@
                 <thead>
                     <tr>
                         <td>Nom</td>
-                        <td>Prénom</td>
+                        <td>Adresse mail</td>
                         <td colspan="2">Action</td>
                     </tr>
                 </thead>
