@@ -7,12 +7,12 @@ use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
-Route::group(['prefix'=>'cards'], function(){
-    Route::get('/index', [CardController::class, 'index'])->name('cards.index');
-});
+// Route::group(['prefix'=>'cards'], function(){
+//     Route::get('/index', [CardController::class, 'index'])->name('cards.index');
+// });
 
 // Route::get('/categories', [CardCategoryController::class, 'index']);
 
@@ -21,11 +21,14 @@ Route::group(['prefix'=>'cards'], function(){
 //     return view('categories.index');
 // });
 
-Route::get('/cards', [CardController::class, "index"]);
+Route::get('/cards', function () {
+    return view('cards.index');
+});
+// Route::get('/cards', [CardController::class, "index"]);
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/user', function () {
     return view('auth.user');
