@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liste des cartes</title>
+    <title>@yield('title', 'Liste des cartes')</title>
     <!-- CDN Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -11,7 +11,7 @@
     <!-- Navbar -->
     <nav class="bg-gray-800 text-white p-4 shadow-md">
         <div class="container mx-auto flex justify-between items-center">
-            <a href="/home" class="text-2xl font-bold">Vignettes</a>
+            <a href="/" class="text-2xl font-bold">MyDigitalArts</a>
             <div class="space-x-4">
                 <a href="/cards" class="hover:text-gray-300 transition-colors duration-200">Cartes</a>
                 <a href="/about" class="hover:text-gray-300 transition-colors duration-200">À propos</a>
