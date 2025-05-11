@@ -5,8 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Card;
 use App\Http\Requests\StoreCardRequest;
 use App\Http\Requests\UpdateCardRequest;
-
-
+use App\Models\CardCategory;
+use Illuminate\Http\Request;
 
 class CardController extends Controller
 {
@@ -17,8 +17,8 @@ class CardController extends Controller
      */
     public function index()
     {
-        $cards = Card::all();
-        return view('cards.index',  compact('cards'));
+        $categories = CardCategory::all();
+        return view('admin.category.index', compact('categories'));
     }
 
     /**
@@ -28,7 +28,7 @@ class CardController extends Controller
      */
     public function create()
     {
-        //
+        // 
     }
 
     /**
@@ -48,9 +48,9 @@ class CardController extends Controller
      * @param  \App\Models\Card  $card
      * @return \Illuminate\Http\Response
      */
-    public function show(Card $card)
+    public function show($id)
     {
-        //
+        // 
     }
 
     /**
@@ -59,9 +59,9 @@ class CardController extends Controller
      * @param  \App\Models\Card  $card
      * @return \Illuminate\Http\Response
      */
-    public function edit(Card $card)
+    public function edit($id)
     {
-        //
+        
     }
 
     /**
@@ -71,9 +71,9 @@ class CardController extends Controller
      * @param  \App\Models\Card  $card
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateCardRequest $request, Card $card)
+    public function update(Request $request, $id)
     {
-        //
+        // 
     }
 
     /**
@@ -82,8 +82,8 @@ class CardController extends Controller
      * @param  \App\Models\Card  $card
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Card $card)
+    public function destroy($id)
     {
-        //
+        // 
     }
 }
