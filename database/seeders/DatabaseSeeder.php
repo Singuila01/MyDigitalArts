@@ -14,7 +14,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        User::factory(10)->create();
+        
         CardCategory::create(["name" => "Street Art", "description" => "Fresque, art urbain", "enable" => "1"]);
         CardCategory::create(["name" => "Calligraphie", "description" => "Calligraphie", "enable" => "1"]);
         CardCategory::create(["name" => "Affiches", "description" => "Affiches", "enable" => "1"]);
@@ -36,10 +37,10 @@ class DatabaseSeeder extends Seeder
         CardCategory::create(["name" => "Architecture", "description" => "Batiments, monuments, structures", "enable" => "1"]);
         CardCategory::create(["name" => "Nature", "description" => "Paysages, faune, flore", "enable" => "1"]);
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+        // User::factory()->create([
+        //     'name' => 'Test User',
+        //     'email' => 'test@example.com',
+        // ]);
         $this->call([
             CardCategorySeeder::class,
             CardSizeSeeder::class,

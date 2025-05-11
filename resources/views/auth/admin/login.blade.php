@@ -2,19 +2,19 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
+    <div class="sous_container">
+        <div class="">
+            <div class="">
                 <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
-                        <div class="row mb-3">
+                        <div class="">
                             <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
 
-                            <div class="col-md-6">
+                            <div class="">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                                 @error('email')
@@ -25,7 +25,7 @@
                             </div>
                         </div>
 
-                        <div class="row mb-3">
+                        <div class="">
                             <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
@@ -39,8 +39,8 @@
                             </div>
                         </div>
 
-                        <div class="row mb-3">
-                            <div class="col-md-6 offset-md-4">
+                        <div class="">
+                            <div class="">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
@@ -51,19 +51,19 @@
                             </div>
                         </div>
 
-                        <div class="row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                        <div class="info">
+                            <div class="sous_info">
+                                <button type="submit" class="">
                                     {{ __('Login') }}
                                 </button>
 
                                 @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                    <a class="" href="{{ route('password.request') }}">
                                         {{ __('Forgot Your Password?') }}
                                     </a>
                                 @endif
 
-                                <a class="btn btn-secondary" href="{{ route('register') }}">
+                                <a class="" href="{{ route('admin.register') }}">
                                     {{ __('Register') }}
                                 </a>
                             </div>
@@ -74,4 +74,47 @@
         </div>
     </div>
 </div>
+
+<style>
+    .sous_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 70px);
+    }
+
+    .card-header {
+        background-color: #f8f9fa;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .card-body {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    input{
+        background-color: #f8f9fa;
+    }
+
+    .btn-link {
+        color: #007bff;
+        text-decoration: none;
+    }
+    .info .sous_info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .info .sous_info a:last-child{
+        grid-column: 1 / -1;
+    }
+</style>
 @endsection

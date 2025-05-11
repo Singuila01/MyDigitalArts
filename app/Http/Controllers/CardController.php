@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Card;
 use App\Http\Requests\StoreCardRequest;
 use App\Http\Requests\UpdateCardRequest;
+use App\Models\CardCategory;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
 class CardController extends Controller
@@ -29,7 +31,7 @@ class CardController extends Controller
      */
     public function create()
     {
-        //
+        // 
     }
 
     /**
@@ -48,7 +50,7 @@ class CardController extends Controller
      *
      * @param  \App\Models\Card  $card
      */
-    public function show(Card $card)
+    public function show($id)
     {
         return view('cards.show', compact('card'));
 
@@ -60,9 +62,9 @@ class CardController extends Controller
      * @param  \App\Models\Card  $card
      * @return \Illuminate\Http\Response
      */
-    public function edit(Card $card)
+    public function edit($id)
     {
-        //
+        
     }
 
     /**
@@ -72,9 +74,9 @@ class CardController extends Controller
      * @param  \App\Models\Card  $card
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateCardRequest $request, Card $card)
+    public function update(Request $request, $id)
     {
-        //
+        // 
     }
 
     /**
@@ -83,8 +85,8 @@ class CardController extends Controller
      * @param  \App\Models\Card  $card
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Card $card)
+    public function destroy($id)
     {
-        //
+        // 
     }
 }
