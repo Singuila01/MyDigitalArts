@@ -11,6 +11,10 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/about', function () {
+    return view('about');
+});
+
 // Route::group(['prefix'=>'cards'], function(){
 //     Route::get('/index', [CardController::class, 'index'])->name('cards.index');
 // });
